@@ -1,6 +1,12 @@
 import { Inter, JetBrains_Mono } from 'next/font/google';
-// or you can use other alternative fonts like:
-import { Space_Mono } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
+
+// or you can use other alternative fonts like
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import './globals.css';
+import { Metadata } from 'next';
+import { ReactNode } from 'react';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -19,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={GeistSans.className}>
       <body>
         <header>
           
